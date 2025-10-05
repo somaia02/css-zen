@@ -1,0 +1,219 @@
+/* || General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    display: block;
+    max-inline-size: 100%;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.4;
+    font-weight: 350;
+}
+h1 {
+    font-size: 2.5rem;
+}
+h5 {
+    font-size: 1.2rem;
+}
+p {
+    font-size: 1rem;
+    padding-block: 10px;
+}
+a {
+    color: inherit;
+}
+
+/* || Organize grid */
+.span-2-rows {
+    grid-row: span 2;
+}
+.span-3-rows {
+    grid-row: span 3;
+}
+.span-3-cols {
+    grid-column: span 3;
+}
+.span-2-cols {
+    grid-column: span 2;
+}
+.start-row-2 {
+    grid-row-start: 2;
+}
+.start-col-1 {
+    grid-column-start: 1;
+}
+.start-col-4 {
+    grid-column-start: 4;
+}
+
+/* || Colors */
+.bg-dark-blue {
+    background-color: #0d2c40;
+}
+.bg-purple {
+    background-color: #c879b2;
+}
+.bg-blue {
+    background-color: #31c6dc;
+}
+.bg-blue05 {
+    background-color: #31c6dccc;
+}
+.bg-orange {
+    background-color: #f15b31;
+}
+.bg-grey {
+    background-color: #f6efe5;
+}
+.color-white {
+    color: white;
+}
+.color-orange {
+    color: #f15b31;
+}
+.color-blue {
+    color: #31c6dc;
+}
+.color-dark-blue {
+    color: #0d2c40;
+}
+.white-circle {
+    border-radius: 50%;
+    background-color: white;
+}
+.dark-blue-circle {
+    border-radius: 50%;
+    background-color: #0d2c40;
+}
+.blue-circle {
+    border-radius: 50%;
+    background-color: #31c6dc;
+}
+
+/* || Alignment */
+.flex {
+    display: flex;
+}
+.align-start {
+    align-self: start;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.align-center {
+    display: flex;
+    align-items: center;
+}
+.justify-center {
+    display: flex;
+    justify-content: center;
+}
+.justify-end {
+    display: flex;
+    justify-content: end;
+}
+.margin-block-auto {
+    margin-block: auto;
+}
+
+/* || Text */
+.sideway-txt{
+    writing-mode: vertical-lr;
+    transform: scale(-1);
+    padding-inline-end: 20px;
+    align-self: start;
+}
+.bold-txt {
+    font-weight: bold;
+}
+
+/* || Utilities */
+.square {
+    aspect-ratio: 1 / 1
+}
+.padding-val {
+    padding: 20px;
+}
+.width-25 {
+    width: 20vw;
+}
+.half-icon {
+    clip-path: inset(0 50% 0 0);
+    justify-self: end;
+}
+.clip-half {
+    margin-inline-end: -6rem;
+}
+.remove-style {
+    list-style: none;
+}
+.remove-style a {
+    text-decoration: none;
+}
+
+/* || Introduction Section */
+.intro {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 2fr;
+    grid-template-columns: repeat(5, 1fr);
+}
+.intro > * {
+    padding: 20px;
+}
+.bi {
+    width: 12rem;
+    height: 12rem;
+    padding: 30px;
+}
+.tall-col {
+    margin-bottom: -80px;
+    background-color: #31c6dc;
+    opacity: 0.95;
+}
+
+/* || About */
+.bg-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.bg-landscape {
+    grid-area: 1 / 1 / 3 / 2;
+    background-image: url(images/bg-tree.jpg);
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+.side-box {
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    width: fit-content;
+    padding: 50px 20px;
+    padding-inline-end: 0;
+    margin-block: 100px;
+    margin-inline-end: -6rem;
+}
+
+/* || Participation */
+.participation {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: #f6efe5;
+}
+.participation-how {
+    grid-area: 1 / 2 / 3 / 4;
+}
+.benefits {
+    padding: 10px;
+    margin-block-start: -16rem;
+    margin-block-end: -30rem;
+}
+
