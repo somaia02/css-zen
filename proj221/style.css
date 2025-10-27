@@ -69,6 +69,9 @@ a {
 .bg-grey {
     background-color: #f6efe5;
 }
+.bg-transparent {
+    background-color: transparent;
+}
 .color-white {
     color: white;
 }
@@ -210,10 +213,51 @@ a {
 }
 .participation-how {
     grid-area: 1 / 2 / 3 / 4;
+    padding: 15px;
+    padding-top: 25px;;
+    margin-top: -8rem;
+    background: #f6efe5;
 }
 .benefits {
-    padding: 10px;
+    padding: 15px;
     margin-block-start: -16rem;
-    margin-block-end: -30rem;
+    margin-block-end: -15rem;
+    padding-block-end: 20rem;
+}
+.benefits > :nth-child(2) {
+    padding-top: 100px;
+}
+
+/* || Requirements */
+.requirements {
+    display: grid;
+    gap: 40px;
+    padding-inline: 20px;
+    grid-template-columns: 1.5fr 1fr 1fr;
+}
+.requirements > * {
+    padding-block-end: 100px;
+}
+.requirements > :nth-child(1) {
+    position: relative;
+    isolation: isolate;
+    background-color: transparent;
+    z-index: 1;
+    align-self: stretch;
+}
+.requirements > :nth-child(1):after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background-image: url(images/bg-sunset.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+.requirements h2 {
+    font-size: 3rem;
+    margin-top: -20%;
+    padding-block: 20px;
 }
 
